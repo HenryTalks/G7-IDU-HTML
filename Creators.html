@@ -33,11 +33,20 @@
             padding: 15px;
             box-sizing: border-box;
             border-radius: 8px;
+            text-align: center; /* 让文字和图片居中 */
         }
 
         .panel h2 {
-            text-align: center;
             color: #333;
+        }
+
+        /* 图片样式 */
+        .panel img {
+            width: 100%;          /* 图片宽度占满panel */
+            height: 150px;        /* 固定高度，可按需调整 */
+            object-fit: cover;    /* 保持比例裁剪 */
+            border-radius: 8px;   /* 圆角效果 */
+            margin-bottom: 10px;  /* 图片和文字间距 */
         }
 
         /* 平板：一行两个 */
@@ -73,28 +82,32 @@
     <div class="container">
 
         <div class="panel">
+            <img src="team1.jpg" alt="Comic panel 1">
             <h2>团队一</h2>
-            <p>我们是团队一，主要负责学习和讨论编程基础知识。</p>
+            <p>我们是ZWIS-701的张羽默和</p>
         </div>
 
         <div class="panel">
+            <img src="team2.jpg" alt="Comic panel 1">
             <h2>团队二</h2>
             <p>我们是团队二，擅长合作完成课堂任务和小项目。</p>
         </div>
 
         <div class="panel">
+            <img src="team3.jpg" alt="Comic panel 1">
             <h2>团队三</h2>
             <p>我们是团队三，喜欢探索新技术和动手实践。</p>
         </div>
 
         <div class="panel">
+            <img src="team4.jpg" alt="Comic panel 1">
             <h2>团队四</h2>
             <p>我们是团队四，注重创意设计和团队交流。</p>
         </div>
 
     </div>
     <div class="back">
-        <a href="index.html">⬅ 返回首页</a>
+        <a href="FrontPage.html">⬅ 返回首页</a>
     </div>
 </body>
 </html>
