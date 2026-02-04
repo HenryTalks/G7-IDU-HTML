@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>团队介绍</title>
+
+    <!-- 内部样式表 -->
+    <style>
+        /* 页面整体样式 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* 容器：放四个panel */
+        .container {
+            display: flex;
+            flex-wrap: wrap;   /* 允许换行 */
+            justify-content: space-between;
+        }
+
+        /* panel样式 */
+        .panel {
+            background-color: white;
+            width: 23%;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        .panel h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* 平板：一行两个 */
+        @media screen and (max-width: 900px) {
+            .panel {
+                width: 48%;
+            }
+        }
+
+        /* 手机：一行一个 */
+        @media screen and (max-width: 600px) {
+            .panel {
+                width: 100%;
+            }
+        }
+
+        .back {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>G7 创作团队</h1>
+
+    <div class="container">
+
+        <div class="panel">
+            <h2>团队一</h2>
+            <p>我们是团队一，主要负责学习和讨论编程基础知识。</p>
+        </div>
+
+        <div class="panel">
+            <h2>团队二</h2>
+            <p>我们是团队二，擅长合作完成课堂任务和小项目。</p>
+        </div>
+
+        <div class="panel">
+            <h2>团队三</h2>
+            <p>我们是团队三，喜欢探索新技术和动手实践。</p>
+        </div>
+
+        <div class="panel">
+            <h2>团队四</h2>
+            <p>我们是团队四，注重创意设计和团队交流。</p>
+        </div>
+
+    </div>
+    <div class="back">
+        <a href="FrontPage.html">⬅ 返回首页</a>
+    </div>
+</body>
+</html>
