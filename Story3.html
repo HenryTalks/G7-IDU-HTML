@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Episode 1</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #eeeeee;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* 漫画区域 */
+        .comic-container {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* 单格漫画 */
+        .panel {
+            background-color: white;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .panel img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        /* 响应式：电脑端两格一行 */
+        @media (min-width: 700px) {
+            .comic-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .panel {
+                width: 45%;
+            }
+        }
+
+        .back {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>失而复得的“龙涎香”配方</h1>
+
+    <div class="comic-container">
+
+        <div class="panel">
+            <img src="p1.png" alt="格子一">
+            <div class="caption">1: 元初，阿拉伯香料师阿卜杜拉研究龙涎香的时候，意外发现加入微量岭南荔枝蜜可以延长香气。</div>
+        </div>
+
+        <div class="panel">
+            <img src="p2.png" alt="格子二">
+            <div class="caption"> 2:他将配方赠与周氏（中国合伙人），约定子孙共享其利。
+               阿卜杜拉对周氏说： “这是我新的研究的龙涎香配方，你是我唯一的合伙人，现在我把它赠予你。我们的子孙共享其利。”</div>
+        </div>
+
+        <div class="panel">
+            <img src="p3.png" alt="格子三">
+            <div class="caption"> 3:元初战乱，阿布杜拉家西迁回阿拉伯 ，阿卜杜拉对周氏说：“战争爆发了，我们得回到西方去了。”</div>
+        </div>
+
+        <div class="panel">
+            <img src="p4.png" alt="格子四">
+            <div class="caption"> 4:周氏后人苦守秘方等待 。</div>
+        </div>
+
+        <div class="panel">
+            <img src="p5.png" alt="格子五">
+            <div class="caption"> 5: 百年之后，一艘船返回广州，船员呈上半块裂开的象牙牌，与周氏的半块象牙排完全吻合。周氏后人对阿卜杜拉后人说：“你...你是阿卜杜拉的后人？”</div>
+        </div>
+
+        <div class="panel">
+            <img src="p6.png" alt="格子六">
+            <div class="caption"> 6: 周氏和阿卜杜拉后人重启香料合作。正是因为丝绸之路连通着东西方龙涎香才得以传承。</div>
+        </div>
+
+    </div>
+
+    <div class="back">
+        <a href="FrontPage.html">⬅ 返回首页</a>
+    </div>
+
+</body>
+</html>

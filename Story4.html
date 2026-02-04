@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Episode 1</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #eeeeee;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* 漫画区域 */
+        .comic-container {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* 单格漫画 */
+        .panel {
+            background-color: white;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .panel img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        /* 响应式：电脑端两格一行 */
+        @media (min-width: 700px) {
+            .comic-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .panel {
+                width: 45%;
+            }
+        }
+
+        .back {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> 锡兰佛牙渡</h1>
+
+    <div class="comic-container">
+
+        <div class="panel">
+            <img src="图1.png" alt="Comic panel 1">
+            <div class="caption">1: 在公元4世纪的斯里兰卡正在发生内乱。</div>
+        </div>
+
+        <div class="panel">
+            <img src="图2.png" alt="Comic panel 2">
+            <div class="caption">2: 公主登上一艘波斯商船求援，她将国宝佛牙舍利藏在头发里：“哎，希望他们不要发现。”公主心想。</div>
+        </div>
+
+        <div class="panel">
+            <img src="图3.png" alt="Comic panel 3">
+            <div class="caption">3: 公主在夹板上眺望远方的家乡，内心十分不安：“战乱快点结束吧！”</div>
+        </div>
+
+        <div class="panel">
+            <img src="图4.png" alt="Comic panel 4">
+            <div class="caption">4: 一群海盗闯上这艘商船：“你们把所有珠宝都交出来！”</div>
+        </div>
+        <div class="panel">
+            <img src="图5.png" alt="Comic panel 5">
+            <div class="caption">5:公主和船长把佛牙舍利偷偷藏在装有胡椒粉的罐子里：“我们把它藏在罐子里吧”船长悄悄的说。</div>
+        </div>
+        <div class="panel">
+            <img src="图6.png" alt="Comic panel 6">
+            <div class="caption">6:海盗拿着金银珠宝哈哈大笑，踢开脚边的罐子：“这是什么廉价的香料！”所以佛牙舍利保住了。</div>
+        </div>
+        <div class="panel">
+            <img src="图7.png" alt="Comic panel 7">
+            <div class="caption">7:为了纪念多年后佛牙舍利被后代放在博物馆里观赏。</div>
+        </div>
+        <div class="panel">
+            <img src="图8.png" alt="Comic panel 8">
+            <div class="caption">8:为了纪念波斯船长冒着风险保护国宝佛牙舍利，工人在海边修建寺庙，寺院墙上写着波斯船长的名字“愿风佑善念”。</div>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="FrontPage.html">⬅ 返回首页</a>
+    </div>
+
+</body>
+</html>
