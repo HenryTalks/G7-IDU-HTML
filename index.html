@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Comic Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f5f5f5;
+        }
+
+        /* ===== 封面大图 ===== */
+        .cover {
+            width: 100%;
+            aspect-ratio: 16 / 6;
+            background-image: url("cover.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* 漫画入口区域 */
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .comic-link {
+            background-color: white;
+            margin: 15px 0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .comic-link a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        /* 响应式：电脑端并排 */
+        @media (min-width: 700px) {
+            .container {
+                display: flex;
+                gap: 20px;
+            }
+
+            .comic-link {
+                width: 25%;
+            }
+
+            .cover {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 封面图 -->
+    <div class="cover"></div>
+
+    <h1>古韵新章，我们的丝绸之路</h1>
+
+    <div class="container">
+        <div class="comic-link">
+            <a href="Creators.html">🌟 创作团队 🌟</a>
+        </div>
+
+        <div class="comic-link">
+            <a href="Story1.html">第一话：💰海底的“白金子”</a>
+        </div>
+
+        <div class="comic-link">
+            <a href="Story2.html">第二话：🎼琵琶曲的归乡</a>
+        </div>
+
+        <div class="comic-link">
+            <a href="Story3.html">第三话：🍹“龙涎香”的复现</a>
+        </div>
+
+        <div class="comic-link">
+            <a href="Story4.html">第四话：🐘锡兰佛牙之渡</a>
+        </div>
+    </div>
+
+</body>
+</html>
