@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Episode 1</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #eeeeee;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* 漫画区域 */
+        .comic-container {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* 单格漫画 */
+        .panel {
+            background-color: white;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .panel img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        /* 响应式：电脑端两格一行 */
+        @media (min-width: 700px) {
+            .comic-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .panel {
+                width: 45%;
+            }
+        }
+
+        .back {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>失传琵琶曲的归乡</h1>
+
+    <div class="comic-container">
+
+        <div class="panel">
+            <img src="tu1.png" alt="Comic panel 1">
+            <div class="caption">魏晋南北朝时期 突厥公主:还有多久到北周宫廷啊？   乐师：马上就到了
+
+            公主内心：怎么这么久啊？</div>
+        </div>
+
+        <div class="panel">
+            <img src="tu2.png" alt="Comic panel 2">
+            <div class="caption">我们给皇帝带来了琵琶曲《龟兹乐》  皇帝：那我今天要好好听一听这个琵琶曲有什么新奇的？</div>
+        </div>
+
+        <div class="panel">
+            <img src="tu3.png" alt="Comic panel 3">
+            <div class="caption">晚唐时期长期战乱，音乐已经难以表演，更别说传承。</div>
+        </div>
+
+        <div class="panel">
+            <img src="tu4.png" alt="Comic panel 4">
+            <div class="caption">只要把乐谱封入墙里，就不会失传了。</div>
+        </div>
+
+        <div class="panel">
+            <img src="tu5.png" alt="Comic panel 4">
+            <div class="caption">二十世纪初，法国汉学家通过研究历史资料在莫高窟发现宝藏，“我找到藏在墙里的乐谱了！！！”</div>
+        </div>
+
+        <div class="panel">
+            <img src="tu6.png" alt="Comic panel 4">
+            <div class="caption">我终于破译出来了,终于让在丝路两端沉睡了千年的旋律重见天日！！！</div>
+        </div>
+
+    </div>
+
+    <div class="back">
+        <a href="FrontPage.html">⬅ 返回首页</a>
+    </div>
+
+</body>
+</html>
